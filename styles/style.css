@@ -1,6 +1,7 @@
-/* Parallax base styles
-  --------------------------------------------- */
+/* --===== Imports =====-- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* --===== Parallax base styles =====-- */
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -18,8 +19,9 @@
 }
 
 .parallax_layer--back {
-  -webkit-transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
+  margin-left: -5px;
 }
 
 .parallax_layer--base {
@@ -34,31 +36,45 @@
   background-size: cover;
 }
 
-/* demo styles
-  --------------------------------------------- */
-
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-/* body {
-  font: 100% / 1.5 Arial;
-} */
-
-/* .parallax {
-  font-size: 200%;
-} */
-
-/* add some padding to force scrollbars */
-/* .parallax_layer {
-  padding: 100vh 0;
-} */
-
-/* centre the content in the parallax layers */
+/* --===== Center content in parallax layer =====-- */
 .foreground {
   height: 2000px;
   width: 80%;
   margin: 90vh auto;
   background: rgba(240, 240, 240, 0.9);
+}
+
+/* --===== Base Styles =====-- */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Intro box */
+#intro {
+  position: relative;
+  top: -35%;
+  padding: 50px;
+  font-size: 2em;
+  background: rgba(240, 240, 240, 0.7);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#intro h1 {
+  margin: 5px 0 50px 0;
+  font-size: 2em;
+}
+
+#intro p {
+  padding-left: 10px;
+}
+
+#intro p:first-of-type {
+  /* padding-left: 20px; */
+}
+
+#intro img {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
 }

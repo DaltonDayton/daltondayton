@@ -97,13 +97,15 @@ nav a:hover {
 #intro {
   width: 80%;
   margin: 20vh auto;
-  /* position: relative; */
-  /* top: -35%; */
   padding: 50px;
   font-size: 2em;
   background: rgba(240, 240, 240, 0.7);
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: auto 100px;
+}
+
+#intro div {
 }
 
 #intro h1 {
@@ -115,8 +117,30 @@ nav a:hover {
   padding-left: 10px;
 }
 
+#social {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-flow: column;
+}
+
+#social div {
+  grid-column: 2 / span 1;
+  margin: 0 auto;
+}
+
+#social a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#social a img {
+  width: 50px;
+}
+
 #intro img {
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
 }

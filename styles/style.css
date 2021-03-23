@@ -99,9 +99,15 @@ nav a:hover {
   grid-template-rows: auto 100px;
 }
 
+#intro div {
+  margin: auto;
+}
+
 #intro h1 {
   margin: 5px 0 50px 0;
   font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #intro p {

@@ -7,13 +7,16 @@
     <title>Dalton Dayton</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#academics">Academics</a></li>
           <li><a href="#resume">Resume</a></li>
@@ -64,7 +67,7 @@
 
         <div class="foreground">
           <!-- --===== About Me =====-- -->
-          <section id="aboutMe">
+          <section id="about">
             <h1 class="sectionHead">About Me</h1>
             <p class="sectionHead">
               I'm a computer science student with professional experience in
@@ -95,30 +98,107 @@
 
           <!-- --===== Portfolio =====-- -->
           <section id="portfolio">
-            <h1 class="sectionHead">Head</h1>
-            <p class="sectionHead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-              ad id saepe illo quam porro, magni eligendi modi eum
-              necessitatibus quo sequi similique expedita? Doloremque aliquam
-              voluptatem dolores aut nam?
-            </p>
-            <div class="left">
-              <h2>section head</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                dicta nihil molestias assumenda temporibus tempore minima vel
-                fugiat autem quos, animi pariatur ratione amet in itaque ab
-                dignissimos. Facere, ad.
-              </p>
-            </div>
-            <div class="right">
-              <p>Right stuff</p>
+            <h1 class="sectionHead">Portfolio</h1>
+            <p class="sectionHead">Here's some stuff</p>
+
+            <div class="portfolioContainer">
+              <ul id="filters" class="clearfix">
+                <li>
+                  <span class="filter" data-filter=".web, .game">All</span>
+                </li>
+                <li><span class="filter" data-filter=".web">Web</span></li>
+                <li>
+                  <span class="filter" data-filter=".game">Game</span>
+                </li>
+              </ul>
+
+              <div id="portfoliolist">
+                <div class="portfolio web" data-cat="web">
+                  <div class="portfolio-wrapper">
+                    <img
+                      src="images/portfolio/assignments.jpg"
+                      alt="CS2350 Assignments"
+                    />
+                    <div class="label">
+                      <div class="label-text">
+                        <a class="text-title">CS2350 Assignments</a>
+                        <span class="text-category">Web</span>
+                      </div>
+                      <div class="label-bg"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio web" data-cat="web">
+                  <div class="portfolio-wrapper">
+                    <img
+                      src="images/portfolio/assignments.jpg"
+                      alt="CS2350 Assignments"
+                    />
+                    <div class="label">
+                      <div class="label-text">
+                        <a class="text-title">CS2350 Assignments</a>
+                        <span class="text-category">Web</span>
+                      </div>
+                      <div class="label-bg"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio web" data-cat="web">
+                  <div class="portfolio-wrapper">
+                    <img
+                      src="images/portfolio/assignments.jpg"
+                      alt="CS2350 Assignments"
+                    />
+                    <div class="label">
+                      <div class="label-text">
+                        <a class="text-title">CS2350 Assignments</a>
+                        <span class="text-category">Web</span>
+                      </div>
+                      <div class="label-bg"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio web" data-cat="web">
+                  <div class="portfolio-wrapper">
+                    <img
+                      src="images/portfolio/assignments.jpg"
+                      alt="CS2350 Assignments"
+                    />
+                    <div class="label">
+                      <div class="label-text">
+                        <a class="text-title">CS2350 Assignments</a>
+                        <span class="text-category">Web</span>
+                      </div>
+                      <div class="label-bg"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio game" data-cat="game">
+                  <div class="portfolio-wrapper">
+                    <img src="images/portfolio/assignments.jpg" alt="" />
+                    <div class="label">
+                      <div class="label-text">
+                        <a class="text-title">Visual Infography</a>
+                        <span class="text-category">Game</span>
+                      </div>
+                      <div class="label-bg"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End of Portfolio List -->
+              </div>
+              <!-- End Portfolio Container -->
             </div>
           </section>
 
           <!-- --===== Academics =====-- -->
           <section id="academics">
-            <h1 class="sectionHead">Head</h1>
+            <h1 class="sectionHead">Academics</h1>
             <p class="sectionHead">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
               ad id saepe illo quam porro, magni eligendi modi eum
@@ -141,7 +221,7 @@
 
           <!-- --===== Resume =====-- -->
           <section id="resume">
-            <h1 class="sectionHead">Head</h1>
+            <h1 class="sectionHead">Resume</h1>
             <p class="sectionHead">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
               ad id saepe illo quam porro, magni eligendi modi eum
@@ -164,7 +244,7 @@
 
           <!-- --===== Contact =====-- -->
           <section id="contact">
-            <h1 class="sectionHead">Head</h1>
+            <h1 class="sectionHead">Contact</h1>
             <p class="sectionHead">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
               ad id saepe illo quam porro, magni eligendi modi eum

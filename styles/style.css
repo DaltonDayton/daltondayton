@@ -67,6 +67,12 @@ section div.right {
   margin: auto;
 }
 
+#academics ul {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* --===== Base Styles =====-- */
 /* html {
   scroll-behavior: smooth;
@@ -212,21 +218,6 @@ nav a:hover {
   /* outline: 1px solid orange; */
 }
 
-/* --===== Academics =====-- */
-#academics {
-  /* outline: 1px solid yellow; */
-}
-
-/* --===== Resume =====-- */
-#resume {
-  /* outline: 1px solid green; */
-}
-
-/* --===== Contact =====-- */
-#contact {
-  /* outline: 1px solid purple; */
-}
-
 .portfolioContainer {
   grid-column: 1 / span 2;
   /* position: relative; */
@@ -332,13 +323,6 @@ nav a:hover {
   top: -30px;
 }
 
-/* #Tablet (Portrait) */
-/* @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .portfolioContainer {
-    width: 768px;
-  }
-} */
-
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 959px) {
   .portfolioContainer {
@@ -356,4 +340,25 @@ nav a:hover {
   .portfolioContainer {
     width: 70%;
   }
+}
+
+/* --===== Academics =====-- */
+#academics {
+  /* outline: 1px solid yellow; */
+}
+
+#academics ul {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+/* --===== Resume =====-- */
+#resume {
+  /* outline: 1px solid green; */
+}
+
+/* --===== Contact =====-- */
+#contact {
+  /* outline: 1px solid purple; */
 }

@@ -359,8 +359,13 @@ nav a {
 .portfolio:hover .label {
   bottom: 0;
 }
+
 .portfolio:hover img {
   top: -30px;
+}
+
+.portfolio a {
+  color: var(--offWhite);
 }
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */

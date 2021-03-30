@@ -102,9 +102,6 @@ section div.right {
   grid-column: 2 / span 1;
 }
 
-#contact {
-}
-
 #contact form {
   grid-column: 2 / span 1;
 }
@@ -259,15 +256,8 @@ nav a {
 }
 
 /* --===== About Me =====-- */
-#about {
-  /* box-shadow: inset 0 0 20px 1px black; */
-  /* outline: 1px solid red; */
-}
 
 /* -- --===== Portfolio =====--  */
-#portfolio {
-  /* outline: 1px solid orange; */
-}
 
 .portfolioContainer {
   grid-column: 1 / span 2;
@@ -393,9 +383,6 @@ nav a {
 }
 
 /* --===== Academics =====-- */
-#academics {
-  /* outline: 1px solid yellow; */
-}
 
 #academics ul {
   width: 75%;

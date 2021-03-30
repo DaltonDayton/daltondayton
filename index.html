@@ -230,11 +230,26 @@
             <h1 class="sectionHead">Contact Me</h1>
             <p class="sectionHead">
               Interested in getting in touch? Use the form below to send me a
-              message!
+              message! Or email me at:
+              <a href="mailto:daltondayton1@gmail.com">
+                daltondayton1@gmail.com
+              </a>
             </p>
             <form action="" method="POST">
-              <input id="name" type="text" name="name" placeholder="Name" />
-              <input id="email" type="text" name="email" placeholder="Email" />
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+                disabled
+              />
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Email"
+                disabled
+              />
               <textarea
                 name=""
                 id="message"
@@ -242,8 +257,15 @@
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                disabled
               ></textarea>
-              <input type="submit" name="submit" value="Send Message" />
+              <input
+                type="submit"
+                name="submit"
+                value="Send Message"
+                class="disabled"
+                disabled
+              />
             </form>
           </section>
 

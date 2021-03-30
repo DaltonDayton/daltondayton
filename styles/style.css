@@ -82,12 +82,13 @@ section div.right {
 }
 
 #academics ul {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#resume {
+#resume a {
+  grid-column: 2 / span 1;
 }
 
 #contact {
@@ -97,11 +98,20 @@ section div.right {
   grid-column: 2 / span 1;
 }
 
-/* --===== Base Styles =====-- */
-/* html {
-  scroll-behavior: smooth;
-} */
+/* --===== General Links =====-- */
+a:link,
+a:visited {
+  color: green;
+  text-decoration: none;
+}
 
+a:hover,
+a:active {
+  color: green;
+  text-decoration: underline;
+}
+
+/* --===== Base Styles =====-- */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(17, 17, 15);
@@ -147,6 +157,18 @@ header {
   padding-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+header a:link,
+header a:visited {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+header a:hover,
+header a:active {
+  color: #f2f2f2;
+  text-decoration: underline;
 }
 
 nav {
@@ -378,8 +400,14 @@ nav a:hover {
 }
 
 /* --===== Resume =====-- */
-#resume {
-  /* outline: 1px solid green; */
+#resume a {
+  width: 100%;
+  text-align: center;
+  background-color: green;
+  padding: 25px;
+  border-radius: 10px;
+  color: #eae7e7;
+  text-decoration: none;
 }
 
 /* --===== Contact =====-- */
@@ -426,4 +454,14 @@ footer {
 footer p {
   margin: auto;
   text-align: center;
+}
+
+/* disabled */
+.disabled {
+  background: #888 !important;
+  cursor: progress !important;
+}
+
+.disabled:active {
+  box-shadow: none !important;
 }

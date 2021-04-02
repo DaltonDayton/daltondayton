@@ -76,7 +76,7 @@ header::before {
   right: 0;
   bottom: 0;
   display: block;
-  background: url('/images/leaves.jpg');
+  background: url('../images/leaves.jpg');
   background-size: cover;
   z-index: 0;
   transform: translateZ(-10px) scale(3.7);

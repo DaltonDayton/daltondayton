@@ -12,234 +12,127 @@
   --midBlack: #333;
 }
 
-/* --===== Parallax base styles =====-- */
-.parallax {
-  height: 100vh;
+/* --=======================-- */
+/* --===== Base Styles =====-- */
+/* --=======================-- */
+html {
+  /* parallax */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* end parallax */
+}
+
+body {
+  /* parallax */
+  width: 100%;
+  height: 100%;
+  /* end parallax */
+
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+}
+
+#parallaxContainer {
+  /* parallax */
+  width: 100%;
+  height: 100%;
+  perspective: 4px;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-perspective: 1px;
-  perspective: 1px;
+  /* end parallax */
 }
 
-.parallax_layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.parallax_layer--back {
-  -webkit-transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
-  margin-left: -8px;
-}
-
-.parallax_layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
-.backgroundImage {
-  height: 100vh;
-  background: url(../images/leaves.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
-/* --===== Center content in parallax layer =====-- */
-.foreground {
-  width: 80%;
-  margin: 0 auto;
-  background: rgba(240, 240, 240, 0.9);
-}
-
-/* --===== Grid Setup =====-- */
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-section h1.sectionHead {
-  grid-column: 1 / span 2;
-}
-
-section p.sectionHead {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
-}
-
-section.centered {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-section.centered h1.sectionHead {
-  grid-column: 1 / span 3;
-}
-
-section.centered p.sectionHead {
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 1;
-}
-
-section div.left {
-  grid-column: 1 / span 1;
-}
-
-section div.right {
-  grid-column: 2 / span 1;
-  margin: auto;
-}
-
-#academics ul {
-  grid-column: 1 / span 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#resume a {
-  grid-column: 2 / span 1;
-}
-
-#contact form {
-  grid-column: 2 / span 1;
-}
-
+/* --=========================-- */
 /* --===== General Links =====-- */
+/* --=========================-- */
 a:link,
 a:visited {
-  color: var(--primary);
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: var(--primary);
   text-decoration: underline;
 }
 
-/* --===== Base Styles =====-- */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--nearBlack);
-  color: var(--midBlack);
+/* --==================-- */
+/* --===== Header =====-- */
+/* --==================-- */
+header {
+  /* parallax */
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  transform-style: preserve-3d;
+  /* end parallax */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url('/images/leaves.jpg');
+  background-size: cover;
+  z-index: 0;
+  transform: translateZ(-10px) scale(3.7);
+}
+
+/* header div {
+  transform: translateZ(0px) scale(1);
+} */
+
+/* --=======================================-- */
+/* --===== Primary Content Base Styles =====-- */
+/* --=======================================-- */
+#primaryContent {
+  position: relative;
+  z-index: 2;
 }
 
 section {
-  padding: 50px 5%;
+  background-color: rgba(240, 240, 240, 0.7);
+  margin: 5% 0;
 }
 
-section h1.sectionHead {
-  font-size: 3em;
-  text-align: center;
-  margin: 50px 0 25px 0;
-}
+/* --===============-- */
+/* --===== Nav =====-- */
+/* --===============-- */
 
-section h2 {
-  font-size: 1.5em;
-  text-align: center;
-  margin: 20px 0;
-}
-
-section p.sectionHead {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-section div.left {
-  margin: auto;
-  margin: 20px 0;
-}
-
-section div.right {
-  margin: auto;
-}
-
-/* --===== Header / Nav =====-- */
-header {
+#navButton {
   position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  padding-top: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  bottom: 30px;
+  right: 20px;
 }
 
-header nav a:link,
-header nav a:visited {
-  color: var(--offWhite);
-  text-decoration: none;
-}
-
-header nav a:hover,
-header nav a:active {
-  background: var(--primary);
-  color: var(--offWhite);
-  text-decoration: underline;
-}
-
-nav {
-  grid-column: 2 / span 1;
-  /* border-radius: 10px; */
-}
-
-nav ul {
-  display: grid;
-  grid-auto-flow: column;
-}
-
-nav a {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
-}
-
+/* --=================-- */
 /* --===== Intro =====-- */
-
-/* Intro box */
+/* --=================-- */
 #intro {
-  width: 80%;
-  margin: 20vh auto;
-  padding: 50px;
-  font-size: 2em;
+  margin: 20% 0;
   background: rgba(240, 240, 240, 0.7);
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto 100px;
-}
-
-#intro div {
-  margin: auto;
 }
 
 #intro h1 {
-  margin: 5px 0 50px 0;
-  font-size: 2em;
+  font-size: 4.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+#intro h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
 #intro p {
-  padding-left: 10px;
-}
-
-#social {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-auto-flow: column;
-}
-
-#social div {
-  grid-column: 2 / span 1;
-  margin: 0 auto;
+  font-size: 1.5em;
 }
 
 #social a {
-  margin: 0 10px;
   text-decoration: none;
 }
 
@@ -249,215 +142,40 @@ nav a {
 
 #intro img {
   width: 80%;
-  max-width: 400px;
-  margin: 0 auto;
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 2;
 }
 
-/* --===== About Me =====-- */
+/* --=================-- */
+/* --===== About =====-- */
+/* --=================-- */
 
-/* -- --===== Portfolio =====--  */
+/* --=====================-- */
+/* --===== Portfolio =====-- */
+/* --=====================-- */
 
-.portfolioContainer {
-  grid-column: 1 / span 2;
-  /* position: relative; */
-  /* width: 960px; */
-  margin: auto;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-
-  /* outline: 1px solid red; */
-}
-
-#filters {
-  margin: 1%;
-  padding: 0;
-  list-style: none;
-}
-
-#filters li {
-  float: left;
-}
-
-#filters li span {
-  display: block;
-  padding: 5px 20px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#filters li span.active {
-  background: var(--primary);
-  color: var(--offWhite);
-}
-
-#portfoliolist {
-  clear: both;
-  margin-top: 50px;
-}
-
-#portfoliolist .portfolio {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 23%;
-  margin: 1%;
-  display: none;
-  float: left;
-  overflow: hidden;
-}
-
-.portfolio-wrapper {
-  overflow: hidden;
-  position: relative !important;
-  background: var(--midBlack);
-  cursor: pointer;
-}
-
-.portfolio img {
-  max-width: 100%;
-  position: relative;
-  top: 0;
-  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.portfolio .label {
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  bottom: -40px;
-  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.portfolio .label-bg {
-  background: var(--primary);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.portfolio .label-text {
-  color: var(--offWhite);
-  position: relative;
-  z-index: 500;
-  padding: 5px 8px;
-}
-
-.portfolio .text-category {
-  display: block;
-  font-size: 9px;
-}
-
-.portfolio:hover .label {
-  bottom: 0;
-}
-
-.portfolio:hover img {
-  top: -30px;
-}
-
-.portfolio a {
-  color: var(--offWhite);
-}
-
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 959px) {
-  .portfolioContainer {
-    width: 95%;
-  }
-
-  #portfoliolist .portfolio {
-    width: 48%;
-    margin: 1%;
-  }
-}
-
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .portfolioContainer {
-    width: 70%;
-  }
-}
-
+/* --=====================-- */
 /* --===== Academics =====-- */
+/* --=====================-- */
 
-#academics ul {
-  width: 75%;
-  margin: auto;
-  text-align: center;
-}
-
+/* --==================-- */
 /* --===== Resume =====-- */
-#resume a {
-  width: 100%;
-  text-align: center;
-  background-color: var(--primary);
-  padding: 25px;
-  /* border-radius: 10px; */
-  color: var(--offWhite);
-  text-decoration: none;
-}
+/* --==================-- */
 
+/* --===================-- */
 /* --===== Contact =====-- */
+/* --===================-- */
 
-form {
-  display: grid;
-}
-
-input,
-textarea {
-  /* border-radius: 5px; */
-  padding: 10px;
-  margin: 5px 0;
-  font: inherit;
-  border: 2px solid var(--offWhite);
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 2px solid var(--primary);
-}
-
-input[type='submit'] {
-  /* border-radius: 5px; */
-  padding: 12px 20px;
-  border: none;
-  background-color: var(--primary);
-  color: var(--offWhite);
-  cursor: pointer;
-}
-
-input[type='submit']:active {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
+/* --==================-- */
 /* --===== Footer =====-- */
-footer {
-  padding: 25px;
-  background-color: var(--primary);
-  color: rgba(0, 0, 0, 0.75);
-}
+/* --==================-- */
 
-footer p {
-  margin: auto;
-  text-align: center;
+/* --===== Boostrap Grid Outlines =====-- */
+/* 
+[class*='row'] {
+  outline: 1px solid lime;
 }
-
-/* disabled */
-.disabled {
-  background: #888 !important;
-  cursor: progress !important;
+[class*='col'] {
+  outline: 1px solid aqua;
 }
-
-.disabled:active {
-  box-shadow: none !important;
-}
+[class*='con'] {
+  outline: 1px solid coral;
+} */

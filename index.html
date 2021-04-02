@@ -1,228 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
     <title>Dalton Dayton</title>
-    <link rel="stylesheet" href="styles/reset.css" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-    <script src="js/script.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#academics">Academics</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- --===== Background =====-- -->
-    <div class="parallax">
-      <div class="parallax_layer parallax_layer--back">
-        <div class="backgroundImage"></div>
-      </div>
-
-      <!-- --===== Main Content =====-- -->
-      <div class="parallax_layer parallax_layer--base">
-        <!-- --===== Intro Box =====-- -->
-        <div id="intro">
-          <div>
-            <p>Hey, I'm</p>
-            <h1>Dalton Dayton</h1>
-            <p>A computer science student</p>
-          </div>
-          <div id="social">
-            <div>
-              <a href="https://github.com/DaltonDayton" target="_blank">
-                <img src="images/icons/github.png" alt="github" />
-              </a>
-              <a href="https://twitter.com/DaltonDayton" target="_blank">
-                <img src="images/icons/twitter.png" alt="twitter" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/daltondayton/"
-                target="_blank"
-              >
-                <img src="images/icons/linkedin.png" alt="linkedin" />
-              </a>
-              <a
-                href="https://www.instagram.com/dalton.dayton/"
-                target="_blank"
-              >
-                <img src="images/icons/instagram.png" alt="instagram" />
-              </a>
-            </div>
-          </div>
-          <img src="images/portrait.jpg" alt="Dalton Dayton" />
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="navButton"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto px-5 bg-dark">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#academics">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <div class="foreground">
-          <!-- --===== About Me =====-- -->
-          <section id="about">
-            <h1 class="sectionHead">About Me</h1>
-            <p class="sectionHead">
-              I'm a computer science student with professional experience in
-              data analysis and a wide variety of personal experience in
-              programming and computer applications.
+    <div id="parallaxContainer">
+      <header></header>
+
+      <div id="primaryContent" class="container">
+        <div id="intro" class="container">
+          <div class="row align-items-center">
+            <div class="col p-5">
+              <div class="py-5 text-center text-md-start">
+                <p>Hey, I'm</p>
+                <h1>Dalton Dayton</h1>
+                <p>A computer science student</p>
+              </div>
+
+              <div id="social" class="mt-5">
+                <div class="col text-center">
+                  <a
+                    class="mx-1 mx-sm-2 mx-md-2 mx-lg-4"
+                    href="https://github.com/DaltonDayton"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/icons/github.png"
+                      alt="github"
+                    />
+                  </a>
+                  <a
+                    class="mx-1 mx-sm-2 mx-md-2 mx-lg-4"
+                    href="https://twitter.com/DaltonDayton"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/icons/twitter.png"
+                      alt="twitter"
+                    />
+                  </a>
+                  <a
+                    class="mx-1 mx-sm-2 mx-md-2 mx-lg-4"
+                    href="https://www.linkedin.com/in/daltondayton/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/icons/linkedin.png"
+                      alt="linkedin"
+                    />
+                  </a>
+                  <a
+                    class="mx-1 mx-sm-2 mx-md-2 mx-lg-4"
+                    href="https://www.instagram.com/dalton.dayton/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/icons/instagram.png"
+                      alt="instagram"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm d-none d-md-block p-lg-5 text-center">
+              <img src="images/portrait.jpg" alt="Dalton Dayton" />
+            </div>
+          </div>
+          <!-- end #intro .row -->
+        </div>
+        <!-- end #intro-->
+
+        <!-- --===== About Me =====-- -->
+        <section id="about">
+          <h1>About Me</h1>
+          <p>
+            I'm a computer science student with professional experience in data
+            analysis and a wide variety of personal experience in programming
+            and computer applications.
+          </p>
+          <div>
+            <h2>Hi There! I'm Dalton Dayton</h2>
+            <p>
+              I was born and raised in Northern Utah. My journey with tech
+              started very young when I started up our Nintendo 64 and disabled
+              the home phone line to connect the family PC to AOL online. I've
+              since taken courses to further my understanding and develop
+              real-world skills.
             </p>
-            <div class="left">
-              <h2 style="font-weight: bold">Hi There! I'm Dalton Dayton</h2>
-              <p>
-                I was born and raised in Northern Utah. My journey with tech
-                started very young when I started up our Nintendo 64 and
-                disabled the home phone line to connect the family PC to AOL
-                online. I've since taken courses to further my understanding and
-                develop real-world skills.
-              </p>
-            </div>
-            <div class="right">
-              <p>
-                <span style="font-weight: bold">Date of birth:</span> 8 November
-                1994
-              </p>
-              <p>
-                <span style="font-weight: bold">Email:</span>
-                daltondayton1@gmail.com
-              </p>
-            </div>
-          </section>
+          </div>
+          <div>
+            <p><span>Date of birth:</span> 8 November 1994</p>
+            <p>
+              <span>Email:</span>
+              daltondayton1@gmail.com
+            </p>
+          </div>
+        </section>
 
-          <!-- --===== Portfolio =====-- -->
-          <section id="portfolio">
-            <h1 class="sectionHead">Portfolio</h1>
-            <p class="sectionHead">Here's some stuff</p>
+        <!-- --===== Portfolio =====-- -->
+        <section id="portfolio">
+          <h1>Portfolio</h1>
+          <p>Here's some stuff</p>
 
-            <div class="portfolioContainer">
-              <ul id="filters" class="clearfix">
-                <li>
-                  <span class="filter" data-filter=".web, .game">All</span>
-                </li>
-                <li><span class="filter" data-filter=".web">Web</span></li>
-              </ul>
+          <div class="portfolioContainer">
+            <ul id="filters" class="clearfix">
+              <li>
+                <span class="filter" data-filter=".web, .game">All</span>
+              </li>
+              <li><span class="filter" data-filter=".web">Web</span></li>
+            </ul>
 
-              <div id="portfoliolist">
-                <div class="portfolio web" data-cat="web">
-                  <div class="portfolio-wrapper">
-                    <a
-                      href="https://icarus.cs.weber.edu/~dd20115/projects/assignments/index.html"
-                      target="_blank"
-                    >
-                      <img
-                        src="images/portfolio/assignments.jpg"
-                        alt="CS2350 Assignments"
-                      />
-                    </a>
-                    <div class="label">
-                      <div class="label-text">
-                        <a
-                          href="https://icarus.cs.weber.edu/~dd20115/projects/assignments/index.html"
-                          target="_blank"
-                          class="text-title"
-                        >
-                          CS2350 Assignments
-                        </a>
-                        <span class="text-category">Web</span>
-                      </div>
-                      <div class="label-bg"></div>
+            <div id="portfoliolist">
+              <div class="portfolio web" data-cat="web">
+                <div class="portfolio-wrapper">
+                  <a
+                    href="https://icarus.cs.weber.edu/~dd20115/projects/assignments/index.html"
+                    target="_blank"
+                  >
+                    <img
+                      src="images/portfolio/assignments.jpg"
+                      alt="CS2350 Assignments"
+                    />
+                  </a>
+                  <div class="label">
+                    <div class="label-text">
+                      <a
+                        href="https://icarus.cs.weber.edu/~dd20115/projects/assignments/index.html"
+                        target="_blank"
+                        class="text-title"
+                      >
+                        CS2350 Assignments
+                      </a>
+                      <span class="text-category">Web</span>
                     </div>
+                    <div class="label-bg"></div>
                   </div>
                 </div>
-
-                <!-- End of Portfolio List -->
               </div>
-              <!-- End Portfolio Container -->
+
+              <!-- End of Portfolio List -->
             </div>
-          </section>
+            <!-- End Portfolio Container -->
+          </div>
+        </section>
 
-          <!-- --===== Academics =====-- -->
-          <section id="academics" class="centered">
-            <h1 class="sectionHead">Academic Portfolio</h1>
-            <p class="sectionHead">
-              Here is a list of some of the college courses I've taken. These
-              courses have provided a phenomonal foundation to build on when
-              applying these concepts to real world projects.
-            </p>
-            <ul>
-              <li>Design Principles</li>
-              <li>Photoshop</li>
-              <li>Fundamentals of Programming - Java</li>
-              <li>Network Fundamentals & Design</li>
-              <li>HTML/CSS</li>
-              <li>PHP</li>
-              <li>JavaScript</li>
-              <li>Relational Database and SQL</li>
-            </ul>
-          </section>
+        <!-- --===== Academics =====-- -->
+        <section id="academics" class="centered">
+          <h1 class="sectionHead">Academic Portfolio</h1>
+          <p class="sectionHead">
+            Here is a list of some of the college courses I've taken. These
+            courses have provided a phenomonal foundation to build on when
+            applying these concepts to real world projects.
+          </p>
+          <ul>
+            <li>Design Principles</li>
+            <li>Photoshop</li>
+            <li>Fundamentals of Programming - Java</li>
+            <li>Network Fundamentals & Design</li>
+            <li>HTML/CSS</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Relational Database and SQL</li>
+          </ul>
+        </section>
 
-          <!-- --===== Resume =====-- -->
-          <section id="resume" class="centered">
-            <h1 class="sectionHead">Here's my resume!</h1>
-            <p class="sectionHead">Here you'll find my professional resume.</p>
-            <a href="documents/Dalton Dayton Resume.pdf" target="_blank">
-              Download CV
+        <!-- --===== Resume =====-- -->
+        <section id="resume" class="centered">
+          <h1 class="sectionHead">Here's my resume!</h1>
+          <p class="sectionHead">Here you'll find my professional resume.</p>
+          <a href="documents/Dalton Dayton Resume.pdf" target="_blank">
+            Download CV
+          </a>
+        </section>
+
+        <!-- --===== Contact =====-- -->
+        <section id="contact" class="centered">
+          <h1 class="sectionHead">Contact Me</h1>
+          <p class="sectionHead">
+            Interested in getting in touch? Use the form below to send me a
+            message! Or email me at:
+            <a href="mailto:daltondayton1@gmail.com">
+              daltondayton1@gmail.com
             </a>
-          </section>
+          </p>
+          <form action="" method="POST">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              disabled
+            />
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Email"
+              disabled
+            />
+            <textarea
+              name=""
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              disabled
+            ></textarea>
+            <input
+              type="submit"
+              name="submit"
+              value="Send Message"
+              class="disabled"
+              disabled
+            />
+          </form>
+        </section>
 
-          <!-- --===== Contact =====-- -->
-          <section id="contact" class="centered">
-            <h1 class="sectionHead">Contact Me</h1>
-            <p class="sectionHead">
-              Interested in getting in touch? Use the form below to send me a
-              message! Or email me at:
-              <a href="mailto:daltondayton1@gmail.com">
-                daltondayton1@gmail.com
-              </a>
-            </p>
-            <form action="" method="POST">
-              <input
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Name"
-                disabled
-              />
-              <input
-                id="email"
-                type="text"
-                name="email"
-                placeholder="Email"
-                disabled
-              />
-              <textarea
-                name=""
-                id="message"
-                name="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                disabled
-              ></textarea>
-              <input
-                type="submit"
-                name="submit"
-                value="Send Message"
-                class="disabled"
-                disabled
-              />
-            </form>
-          </section>
-
-          <!-- --===== Footer =====-- -->
-          <footer>
-            <p>Dalton Dayton &copy; 2021</p>
-          </footer>
-        </div>
+        <!-- --===== Footer =====-- -->
+        <footer>
+          <p>Dalton Dayton &copy; 2021</p>
+        </footer>
       </div>
     </div>
-    <!-- --===== End Parallax =====-- -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

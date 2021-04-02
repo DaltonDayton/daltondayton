@@ -154,40 +154,11 @@ section {
 /* --=====================-- */
 /* --===== Portfolio =====-- */
 /* --=====================-- */
-
-/* --=====================-- */
-/* --===== Academics =====-- */
-/* --=====================-- */
-
-/* --==================-- */
-/* --===== Resume =====-- */
-/* --==================-- */
-
-/* --===================-- */
-/* --===== Contact =====-- */
-/* --===================-- */
-
-/* --==================-- */
-/* --===== Footer =====-- */
-/* --==================-- */
-
-/* --===== Boostrap Grid Outlines =====-- */
-/* 
-[class*='row'] {
-  outline: 1px solid lime;
-}
-[class*='col'] {
-  outline: 1px solid aqua;
-}
-[class*='con'] {
-  outline: 1px solid coral;
-} */
-
 .portfolioContainer {
-  grid-column: 1 / span 2;
+  /* grid-column: 1 / span 2; */
   /* position: relative; */
   /* width: 960px; */
-  margin: auto;
+  /* margin: auto; */
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -219,20 +190,21 @@ section {
 }
 
 #portfoliolist {
-  clear: both;
+  /* clear: both; */
   margin-top: 50px;
+  /* margin: -2%; */
 }
 
 #portfoliolist .portfolio {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 23%;
-  margin: 1%;
+  /* -webkit-box-sizing: border-box; */
+  /* -moz-box-sizing: border-box; */
+  /* -o-box-sizing: border-box; */
+  /* box-sizing: border-box; */
+  /* width: 23%; */
+  /* margin: 1%; */
   display: none;
-  float: left;
-  overflow: hidden;
+  /* float: left; */
+  /* overflow: hidden; */
 }
 
 .portfolio-wrapper {
@@ -253,8 +225,8 @@ section {
 .portfolio .label {
   position: absolute;
   width: 100%;
-  height: 40px;
-  bottom: -40px;
+  height: 150px;
+  bottom: -150px;
   -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -292,8 +264,13 @@ section {
   color: var(--offWhite);
 }
 
+.portfolio p {
+  /* font-weight: normal; */
+  font-size: 0.8em;
+}
+
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 959px) {
+/* @media only screen and (max-width: 959px) {
   .portfolioContainer {
     width: 95%;
   }
@@ -302,11 +279,39 @@ section {
     width: 48%;
     margin: 1%;
   }
-}
+} */
 
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* @media only screen and (min-width: 480px) and (max-width: 767px) {
   .portfolioContainer {
     width: 70%;
   }
+} */
+
+/* --=====================-- */
+/* --===== Academics =====-- */
+/* --=====================-- */
+
+/* --==================-- */
+/* --===== Resume =====-- */
+/* --==================-- */
+
+/* --===================-- */
+/* --===== Contact =====-- */
+/* --===================-- */
+
+/* --==================-- */
+/* --===== Footer =====-- */
+/* --==================-- */
+
+/* --===== Boostrap Grid Outlines =====-- */
+
+[class*='row'] {
+  outline: 2px dashed lime;
+}
+[class*='col'] {
+  outline: 2px dashed aqua;
+}
+[class*='con'] {
+  outline: 2px dashed coral;
 }

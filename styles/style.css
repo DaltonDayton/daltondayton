@@ -291,6 +291,9 @@ section {
 /* --=====================-- */
 /* --===== Academics =====-- */
 /* --=====================-- */
+#academics ul li {
+  background-color: rgba(240, 240, 240, 0.7);
+}
 
 /* --==================-- */
 /* --===== Resume =====-- */
@@ -306,7 +309,7 @@ section {
 
 /* --===== Boostrap Grid Outlines =====-- */
 
-[class*='row'] {
+/* [class*='row'] {
   outline: 2px dashed lime;
 }
 [class*='col'] {
@@ -314,4 +317,4 @@ section {
 }
 [class*='con'] {
   outline: 2px dashed coral;
-}
+} */

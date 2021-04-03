@@ -115,17 +115,14 @@ section {
 #intro {
   margin: 20% 0;
   background: rgba(240, 240, 240, 0.7);
+  color: var(--midBlack);
 }
 
 #intro h1 {
   font-size: 4.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-#intro h2 {
-  font-size: 2.2rem;
-  font-weight: 300;
+  margin-top: -20px;
 }
 
 #intro p {
@@ -141,7 +138,7 @@ section {
 }
 
 #intro img {
-  width: 80%;
+  width: 90%;
 }
 
 /* --=================-- */
@@ -372,7 +369,7 @@ input[type='submit']:active {
 
 /* --===== Boostrap Grid Outlines =====-- */
 
-/* [class*='row'] {
+[class*='row'] {
   outline: 2px dashed lime;
 }
 [class*='col'] {
@@ -380,4 +377,4 @@ input[type='submit']:active {
 }
 [class*='con'] {
   outline: 2px dashed coral;
-} */
+}

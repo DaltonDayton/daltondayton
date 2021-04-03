@@ -147,6 +147,10 @@ section {
 /* --=================-- */
 /* --===== About =====-- */
 /* --=================-- */
+#about h1 {
+  font-size: 3em;
+}
+
 #about span {
   font-weight: bold;
 }
@@ -154,6 +158,10 @@ section {
 /* --=====================-- */
 /* --===== Portfolio =====-- */
 /* --=====================-- */
+#portfolio h1 {
+  font-size: 3em;
+}
+
 .portfolioContainer {
   /* grid-column: 1 / span 2; */
   /* position: relative; */
@@ -295,9 +303,28 @@ section {
   background-color: rgba(240, 240, 240, 0.7);
 }
 
+#academics h1 {
+  font-size: 3em;
+}
+
 /* --==================-- */
 /* --===== Resume =====-- */
 /* --==================-- */
+#resume h1 {
+  font-size: 3em;
+}
+
+#resume a {
+  background-color: var(--primary);
+  text-align: center;
+  color: var(--offWhite);
+  padding: 10px 0;
+  transition: all 0.25s ease;
+}
+
+#resume a:hover {
+  background-color: #113311;
+}
 
 /* --===================-- */
 /* --===== Contact =====-- */

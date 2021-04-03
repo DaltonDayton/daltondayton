@@ -482,12 +482,19 @@
           <div class="row">
             <div class="col-lg-8 col-xl-6 mx-auto">
               <form action="" method="POST">
-                <input id="name" type="text" name="name" placeholder="Name" />
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  disabled
+                />
                 <input
                   id="email"
                   type="text"
                   name="email"
                   placeholder="Email"
+                  disabled
                 />
                 <textarea
                   name=""
@@ -496,12 +503,14 @@
                   cols="20"
                   rows="10"
                   placeholder="Message"
+                  disabled
                 ></textarea>
                 <input
                   type="submit"
                   name="submit"
                   value="Send Message"
                   class="disabled"
+                  disabled
                 />
               </form>
             </div>

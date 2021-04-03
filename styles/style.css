@@ -330,10 +330,6 @@ section {
   font-size: 3em;
 }
 
-form {
-  /* display: grid; */
-}
-
 input,
 textarea {
   /* border-radius: 5px; */

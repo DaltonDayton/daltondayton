@@ -217,6 +217,8 @@ section {
   position: relative !important;
   background: var(--midBlack);
   cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .portfolio img {

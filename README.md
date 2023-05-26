@@ -14,8 +14,8 @@
 
 ## My Github Stats
 
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=daltondayton&theme=navy-gear)](https://git.io/streak-stats)
+  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=daltondayton&theme=navy-gear)](https://github.com/DaltonDayton)
 <!--   ![Dalton ayton's GitHub stats](https://github-readme-stats.vercel.app/api?username=daltondayton&show_icons=true&theme=solarized-light) -->
  
 ## Top Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daltondayton&layout=compact&theme=navy-gear)](https://github.com/daltondayton/github-readme-stats) 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daltondayton&layout=compact&theme=navy-gear)](https://github.com/DaltonDayton)

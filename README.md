@@ -4,7 +4,7 @@
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daltondayton) [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daltondayton/)
 
 - 🌱 I’m currently learning: ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-- 👨‍💻 All of my projects are available at [DaltonDayton.com](https://www.daltondayton.com)
+<!-- - 👨‍💻 All of my projects are available at [DaltonDayton.com](https://www.daltondayton.com) -->
 
 ## Tech & Tools
 

@@ -1,7 +1,9 @@
+
+## Hi, I am Dalton Dayton 👋
+As a software test engineer, I specialize in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery. My expertise spans manual and automated testing, and I am a detail-oriented and analytical thinker who enjoys tackling complex problems and finding innovative solutions.
 <!--
-# Hi, I am Dalton Dayton 👋
 #### I'm a software test engineer specializing in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery.
-<!--
+
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daltondayton) [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daltondayton/)
 
 - 🌱 I’m currently learning: ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)

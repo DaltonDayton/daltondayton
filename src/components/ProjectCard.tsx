@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-surface-badge px-3 py-1 text-sm font-medium text-text-badge"
+              className="rounded-full from-surface-badge-from to-surface-badge-to bg-gradient-to-br px-3 py-1 text-sm font-medium text-text-badge"
             >
               {tech}
             </span>

@@ -49,7 +49,7 @@ export default function AboutPage() {
             ].map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-surface-badge px-4 py-2 text-sm font-medium text-text-badge"
+                className="rounded-full from-surface-badge-from to-surface-badge-to bg-gradient-to-br px-4 py-2 text-sm font-medium text-text-badge"
               >
                 {tech}
               </span>

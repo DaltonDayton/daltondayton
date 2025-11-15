@@ -24,6 +24,8 @@
   --surface-active: var(--color-zinc-100);
   --surface-secondary: var(--color-zinc-100);
   --surface-badge: var(--color-zinc-200);
+  --surface-badge-from: var(--color-pink-300);
+  --surface-badge-to: var(--color-pink-500);
   --text-badge: var(--color-zinc-700);
 }
 
@@ -47,6 +49,8 @@
   --surface-active: var(--color-stone-800);
   --surface-secondary: var(--color-stone-800);
   --surface-badge: var(--color-stone-800);
+  --surface-badge-from: var(--color-teal-800);
+  --surface-badge-to: var(--color-teal-950);
   --text-badge: var(--color-stone-300);
 }
 
@@ -64,6 +68,8 @@
   --color-surface-active: var(--surface-active);
   --color-surface-secondary: var(--surface-secondary);
   --color-surface-badge: var(--surface-badge);
+  --color-surface-badge-from: var(--surface-badge-from);
+  --color-surface-badge-to: var(--surface-badge-to);
   --color-text-badge: var(--text-badge);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

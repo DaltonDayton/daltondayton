@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Hi, I am Dalton Dayton 👋
 
-## Getting Started
+As a software test engineer, I specialize in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery. My expertise spans both manual and automated testing. I’m a detail-oriented, analytical thinker who thrives on tackling complex problems and devising innovative solutions.
 
-First, run the development server:
+<!--
+#### I'm a software test engineer specializing in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daltondayton) [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daltondayton/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🌱 I’m currently learning: ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+<!-- - 👨‍💻 All of my projects are available at [DaltonDayton.com](https://www.daltondayton.com) -->
+<!--
+## Tech & Tools
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ ![c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ ![selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white) ![git](https://img.shields.io/badge/Git-red?style=for-the-badge&logo=Git&logoColor=white) ![ado](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white) ![docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
-## Learn More
+## My Github Stats
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=daltondayton&theme=navy-gear)](https://github.com/DaltonDayton)
+<!--   ![Dalton ayton's GitHub stats](https://github-readme-stats.vercel.app/api?username=daltondayton&show_icons=true&theme=solarized-light) -->
+<!--
+## Top Languages
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daltondayton&layout=compact&theme=navy-gear)](https://github.com/DaltonDayton)
+-->

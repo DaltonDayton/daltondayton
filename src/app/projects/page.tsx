@@ -14,10 +14,10 @@ export default function ProjectsPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-24">
       <div className="mb-16 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+        <h1 className="text-4xl font-bold tracking-tight text-primary">
           Projects
         </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="text-lg text-secondary">
           A collection of projects demonstrating full-stack development skills
         </p>
       </div>

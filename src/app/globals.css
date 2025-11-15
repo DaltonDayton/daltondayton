@@ -9,6 +9,20 @@
   /* Accent colors - change these to switch your theme */
   --color-accent: var(--color-pink-500);
   --color-accent-hover: var(--color-pink-600);
+
+  /* Text colors - light mode uses zinc */
+  --text-primary: var(--color-zinc-900);
+  --text-secondary: var(--color-zinc-600);
+
+  /* Borders & surfaces - light mode uses zinc */
+  --border-primary: var(--color-zinc-200);
+  --border-secondary: var(--color-zinc-800);
+  --surface: var(--color-white);
+  --surface-hover: var(--color-zinc-50);
+  --surface-active: var(--color-zinc-100);
+  --surface-secondary: var(--color-zinc-100);
+  --surface-badge: var(--color-zinc-200);
+  --text-badge: var(--color-zinc-700);
 }
 
 .dark {
@@ -16,15 +30,39 @@
   --foreground: var(--color-stone-50);
 
   /* Accent colors for dark mode */
-  /* --color-accent: var(--color-pink-600); */
-  /* --color-accent-hover: var(--color-pink-700); */
   --color-accent: var(--color-teal-700);
   --color-accent-hover: var(--color-teal-800);
+
+  /* Text colors - dark mode uses stone */
+  --text-primary: var(--color-stone-50);
+  --text-secondary: var(--color-stone-400);
+
+  /* Borders & surfaces - dark mode uses stone */
+  --border-primary: var(--color-stone-800);
+  --border-secondary: var(--color-stone-200);
+  --surface: var(--color-stone-900);
+  --surface-hover: var(--color-stone-800);
+  --surface-active: var(--color-stone-800);
+  --surface-secondary: var(--color-stone-800);
+  --surface-badge: var(--color-stone-800);
+  --text-badge: var(--color-stone-300);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-border: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-active: var(--surface-active);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-badge: var(--surface-badge);
+  --color-text-badge: var(--text-badge);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

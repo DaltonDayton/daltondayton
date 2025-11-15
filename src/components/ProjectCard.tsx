@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: Project }) {
     <div className="flex flex-col gap-6">
       {/* Image or placeholder */}
       {project.image ? (
-        <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800">
+        <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border">
           <Image
             src={project.image}
             alt={project.name}
@@ -18,16 +18,16 @@ export default function ProjectCard({ project }: { project: Project }) {
           />
         </div>
       ) : (
-        <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-900" />
+        <div className="aspect-video w-full overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-background to-accent" />
       )}
 
       {/* Content */}
       <div className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold tracking-tight text-stone-900 dark:text-stone-50">
+        <h2 className="text-3xl font-bold tracking-tight text-primary">
           {project.name}
         </h2>
 
-        <p className="text-lg leading-relaxed text-stone-600 dark:text-stone-400">
+        <p className="text-lg leading-relaxed text-secondary">
           {project.summary}
         </p>
 
@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-stone-100 px-3 py-1 text-sm font-medium text-stone-700 dark:bg-stone-800 dark:text-stone-300"
+              className="rounded-full bg-surface-badge px-3 py-1 text-sm font-medium text-text-badge"
             >
               {tech}
             </span>

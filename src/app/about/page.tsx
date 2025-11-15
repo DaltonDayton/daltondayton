@@ -10,15 +10,15 @@ export default function AboutPage() {
     <main className="mx-auto max-w-2xl px-6 py-24">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+          <h1 className="text-4xl font-bold tracking-tight text-primary">
             About
           </h1>
-          <p className="text-xl text-zinc-600 dark:text-zinc-400">
+          <p className="text-xl text-secondary">
             From testing software to building it
           </p>
         </div>
 
-        <div className="flex flex-col gap-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <div className="flex flex-col gap-6 text-lg leading-relaxed text-secondary">
           <p>
             I&apos;m a Senior Software Test Engineer making the transition to
             full-stack software development. My background in quality assurance
@@ -33,7 +33,7 @@ export default function AboutPage() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+          <h2 className="text-2xl font-bold tracking-tight text-primary">
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -49,7 +49,7 @@ export default function AboutPage() {
             ].map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                className="rounded-full bg-surface-badge px-4 py-2 text-sm font-medium text-text-badge"
               >
                 {tech}
               </span>

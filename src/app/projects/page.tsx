@@ -22,6 +22,15 @@ export default function ProjectsPage() {
         </p>
       </div>
 
+      <hr
+        className="mb-16"
+        style={{
+          border: "none",
+          height: "1px",
+          background: "var(--color-accent)",
+        }}
+      />
+
       <div className="flex flex-col gap-24">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project} />

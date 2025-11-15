@@ -1,6 +1,10 @@
 ## Hi, I am Dalton Dayton 👋
 
-As a software test engineer, I specialize in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery. My expertise spans both manual and automated testing. I’m a detail-oriented, analytical thinker who thrives on tackling complex problems and devising innovative solutions.
+I'm a Senior Software Test Engineer making the transition to full-stack software development. My background in quality assurance has given me a deep understanding of what makes software reliable, maintainable, and user-friendly.
+
+My testing background means I think about edge cases, write comprehensive tests, and build software that's designed to be maintained and scaled.
+
+<!--As a software test engineer, I specialize in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery. My expertise spans both manual and automated testing. I’m a detail-oriented, analytical thinker who thrives on tackling complex problems and devising innovative solutions.
 
 <!--
 #### I'm a software test engineer specializing in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery.

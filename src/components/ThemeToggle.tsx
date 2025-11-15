@@ -8,6 +8,8 @@ export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    // Intentional: Prevent hydration mismatch between server and client
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
@@ -32,7 +34,9 @@ export default function ThemeToggle() {
       title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       <span>{theme === "light" ? "☀️" : "🌙"}</span>
-      <span className="hidden sm:inline">{theme === "light" ? "Light" : "Dark"}</span>
+      <span className="hidden sm:inline">
+        {theme === "light" ? "Light" : "Dark"}
+      </span>
     </button>
   );
 }

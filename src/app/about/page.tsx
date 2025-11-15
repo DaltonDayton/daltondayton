@@ -1,4 +1,6 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "About | Dalton Dayton",
   description: "Software Test Engineer transitioning to Software Development",
 };
@@ -18,15 +20,14 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
           <p>
-            I'm a Senior Software Test Engineer making the transition to
+            I&apos;m a Senior Software Test Engineer making the transition to
             full-stack software development. My background in quality assurance
             has given me a deep understanding of what makes software reliable,
             maintainable, and user-friendly.
           </p>
-
           <p>
             My testing background means I think about edge cases, write
-            comprehensive tests, and build software that's designed to be
+            comprehensive tests, and build software that&apos;s designed to be
             maintained and scaled.
           </p>
         </div>

@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
 import { getProjects } from "@/features/projects/utils";
 import ProjectCard from "@/components/ProjectCard";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Projects | Dalton Dayton",
   description:
     "My software development projects showcasing React, C#, and Ruby on Rails",

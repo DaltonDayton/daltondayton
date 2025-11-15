@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Project } from "@/features/projects/types";
 
@@ -36,7 +38,14 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.links.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300"
+              className="text-sm font-medium transition-colors"
+              style={{ color: "var(--color-accent)" }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "var(--color-accent-hover)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "var(--color-accent)";
+              }}
             >
               View Demo →
             </Link>
@@ -46,7 +55,14 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.links.repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300"
+              className="text-sm font-medium transition-colors"
+              style={{ color: "var(--color-accent)" }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "var(--color-accent-hover)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "var(--color-accent)";
+              }}
             >
               View Code ↗
             </Link>

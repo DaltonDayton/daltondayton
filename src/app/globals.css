@@ -3,13 +3,23 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-stone-100);
+  --foreground: var(--color-stone-950);
+
+  /* Accent colors - change these to switch your theme */
+  --color-accent: var(--color-pink-500);
+  --color-accent-hover: var(--color-pink-600);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: var(--color-stone-950);
+  --foreground: var(--color-stone-50);
+
+  /* Accent colors for dark mode */
+  /* --color-accent: var(--color-pink-600); */
+  /* --color-accent-hover: var(--color-pink-700); */
+  --color-accent: var(--color-teal-700);
+  --color-accent-hover: var(--color-teal-800);
 }
 
 @theme inline {

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ThemeButton from "@/components/ThemeButton";
 
 export default function Home() {
   return (
@@ -18,12 +18,7 @@ export default function Home() {
           Building with React, C#, and Ruby on Rails.
         </p>
 
-        <Link
-          href="/projects"
-          className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
-        >
-          View Projects
-        </Link>
+        <ThemeButton href="/projects">View Projects</ThemeButton>
       </div>
     </main>
   );

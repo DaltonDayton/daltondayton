@@ -15,34 +15,85 @@ export const projects: Project[] = [
   },
   {
     slug: "More-to-come",
-    name: "More to come",
-    summary: "Placeholder while site is under construction",
+    name: "...",
+    summary:
+      "Placeholder while site is under construction. Here's some stuff I know",
     tech: [
+      // === Languages ===
       "C#",
-      ".NET",
+      "Python",
+      "TypeScript",
+      "Ruby",
+      // === Frontend Frameworks & Libraries ===
       "React",
+      "Next.js",
+      "Vue.js",
+      "Angular",
+      "Tailwind CSS",
+      // "Redux",
+      "GraphQL",
+      // === Backend Frameworks & Libraries ===
+      ".NET",
       "Ruby on Rails",
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "Django",
+      // "Flask",
+      // === Mobile ===
+      // "React Native",
+      // "Flutter",
+      // "Swift",
+      // "Kotlin",
+      // === Database ===
       "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      // === Cloud & Infrastructure ===
+      "AWS",
+      "Google Cloud",
+      // "DigitalOcean",
+      "Azure DevOps",
+      // === DevOps & Deployment ===
       "Docker",
       "Vercel",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Python",
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "Kubernetes",
+      // === CI/CD ===
+      "GitHub Actions",
+      // "GitLab CI",
+      // "Jenkins",
+      // === Version Control ===
+      "Git",
+      // === Testing ===
       "Selenium",
       "Playwright",
-      "Git",
-      "Azure DevOps",
-      "React Testing Library",
+      // "React Testing Library",
       "Postman",
+      // "Jest",
+      // "Cypress",
+      // === Monitoring & Analytics ===
+      // "New Relic",
+      "Splunk",
+      "DataDog",
+      // "Sentry",
+      // === Package Managers ===
+      "npm",
+      "yarn",
+      "pip",
+      "NuGet",
+      // === Build Tools ===
+      "Webpack",
+      "Vite",
+      // "Babel",
+      // === Design Tools ===
+      // "Figma",
+      // "Adobe XD",
+      // "Sketch",
     ],
     role: "Solo dev",
     links: {
-      demo: "https://your-rails-demo.com",
-      repo: "https://github.com/you/rails-react-saas",
+      demo: "https://www.daltondayton.com/projects",
+      repo: "https://www.daltondayton.com/projects",
     },
   },
 ];

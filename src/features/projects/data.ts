@@ -14,6 +14,30 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "pomera-pomodoro-timer",
+    name: "Pomera",
+    summary:
+      "A cross-platform Pomodoro timer built with Flutter. Configurable work and break intervals, audio and system notifications, a wakelock to keep the screen alive, and a circular countdown display.",
+    image: "/images/pomera.png",
+    tech: ["Flutter", "Dart", "Riverpod"],
+    role: "Solo dev",
+    links: {
+      repo: "https://github.com/DaltonDayton/pomodorotimer",
+    },
+  },
+  {
+    slug: "asteroids",
+    name: "Asteroids",
+    summary:
+      "A clone of the classic Asteroids arcade game written in Python with Pygame. Control a spaceship to move and shoot, destroying asteroids to survive as long as possible.",
+    image: "/images/asteroids.png",
+    tech: ["Python", "Pygame"],
+    role: "Solo dev",
+    links: {
+      repo: "https://github.com/DaltonDayton/asteroids",
+    },
+  },
+  {
     slug: "More-to-come",
     name: "...",
     summary:

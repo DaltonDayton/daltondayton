@@ -1,30 +1,77 @@
-## Hi, I am Dalton Dayton 👋
+# React + TypeScript + Vite
 
-I'm a Senior Software Test Engineer making the transition to full-stack software development. My background in quality assurance has given me a deep understanding of what makes software reliable, maintainable, and user-friendly.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-My testing background means I think about edge cases, write comprehensive tests, and build software that's designed to be maintained and scaled.
+Currently, two official plugins are available:
 
-<!--As a software test engineer, I specialize in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery. My expertise spans both manual and automated testing. I’m a detail-oriented, analytical thinker who thrives on tackling complex problems and devising innovative solutions.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-<!--
-#### I'm a software test engineer specializing in designing and executing test cases, identifying defects, and collaborating with cross-functional teams to ensure high-quality product delivery.
+## React Compiler
 
-[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daltondayton) [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daltondayton/)
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-- 🌱 I’m currently learning: ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-<!-- - 👨‍💻 All of my projects are available at [DaltonDayton.com](https://www.daltondayton.com) -->
-<!--
-## Tech & Tools
+Note: This will impact Vite dev & build performances.
 
- ![c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+## Expanding the ESLint configuration
 
- ![selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white) ![git](https://img.shields.io/badge/Git-red?style=for-the-badge&logo=Git&logoColor=white) ![ado](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white) ![docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## My Github Stats
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=daltondayton&theme=navy-gear)](https://github.com/DaltonDayton)
-<!--   ![Dalton ayton's GitHub stats](https://github-readme-stats.vercel.app/api?username=daltondayton&show_icons=true&theme=solarized-light) -->
-<!--
-## Top Languages
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daltondayton&layout=compact&theme=navy-gear)](https://github.com/DaltonDayton)
--->
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
+```

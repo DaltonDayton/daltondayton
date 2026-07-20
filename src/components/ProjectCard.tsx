@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { Project } from "../types";
 
 const ProjectCard = ({ project }: { project: Project }) => {
@@ -5,22 +6,32 @@ const ProjectCard = ({ project }: { project: Project }) => {
     <div className="flex flex-col gap-6">
       {/* Image or placeholder */}
       {project.image ? (
-        <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border">
+        <Link
+          to={`/projects/${project.slug}`}
+          tabIndex={-1}
+          aria-hidden="true"
+          className="relative block aspect-video w-full overflow-hidden rounded-2xl border border-border"
+        >
           <img
             src={project.image}
             alt={project.name}
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover"
           />
-        </div>
+        </Link>
       ) : (
         <div className="aspect-video w-full overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-background to-accent" />
       )}
 
       {/* Content */}
       <div className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold tracking-tight text-primary">
-          {project.name}
+        <h2 className="text-3xl font-bold tracking-tight">
+          <Link
+            to={`/projects/${project.slug}`}
+            className="text-primary transition-colors hover:text-accent"
+          >
+            {project.name}
+          </Link>
         </h2>
 
         <p className="text-lg leading-relaxed text-secondary">

@@ -4,6 +4,18 @@ import type { Project } from "../types";
 
 const PROJECTS: Project[] = [
   {
+    slug: "quill",
+    name: "Quill",
+    summary:
+      "A declarative dotfiles and machine-setup tool written in Go. TOML modules describe packages, config symlinks, and services; host profiles apply them across Arch Linux and WSL through a Bubble Tea TUI that installs everything from a single bootstrap script.",
+    image: "/images/quill.png",
+    tech: ["Go", "Bubble Tea", "TOML", "Linux"],
+    role: "Solo dev",
+    links: {
+      repo: "https://github.com/DaltonDayton/dotfiles",
+    },
+  },
+  {
     slug: "react-portfolio",
     name: "React Portfolio",
     summary: "The portfolio you're currently viewing.",

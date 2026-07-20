@@ -3,6 +3,7 @@ export interface Project {
   name: string;
   summary: string;
   description?: string[];
+  aiUsage?: 0 | 1 | 2 | 3;
   image?: string;
   tech: string[];
   role: string;

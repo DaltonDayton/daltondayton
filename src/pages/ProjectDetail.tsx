@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { PROJECTS } from "../data";
 import usePageTitle from "../hooks/usePageTitle";
+import AiUsageMeter from "../components/AiUsageMeter";
 
 const ProjectDetailPage = () => {
   const { slug } = useParams();
@@ -56,6 +57,9 @@ const ProjectDetailPage = () => {
             {project.name}
           </h1>
           <p className="text-sm text-secondary">{project.role}</p>
+          {project.aiUsage !== undefined && (
+            <AiUsageMeter level={project.aiUsage} />
+          )}
         </div>
 
         <div className="flex flex-wrap gap-2">

@@ -3,6 +3,7 @@ import type { Project } from "./types";
 export const PROJECTS: Project[] = [
   {
     slug: "quill",
+    aiUsage: 2,
     name: "Quill",
     summary:
       "A declarative dotfiles and machine-setup tool written in Go. TOML modules describe packages, config symlinks, and services; host profiles apply them across Arch Linux and WSL through a Bubble Tea TUI that installs everything from a single bootstrap script.",
@@ -20,6 +21,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "react-portfolio",
+    aiUsage: 1,
     name: "React Portfolio",
     summary: "The portfolio you're currently viewing.",
     description: [
@@ -37,6 +39,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "pomera-pomodoro-timer",
+    aiUsage: 3,
     name: "Pomera",
     summary:
       "A cross-platform Pomodoro timer built with Flutter. Configurable work and break intervals, audio and system notifications, a wakelock to keep the screen alive, and a circular countdown display.",
@@ -53,6 +56,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "asteroids",
+    aiUsage: 0,
     name: "Asteroids",
     summary:
       "A clone of the classic Asteroids arcade game written in Python with Pygame. Control a spaceship to move and shoot, destroying asteroids to survive as long as possible.",

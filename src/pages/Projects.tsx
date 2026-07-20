@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import usePageTitle from "../hooks/usePageTitle";
 import type { Project } from "../types";
 
 const PROJECTS: Project[] = [
@@ -124,6 +125,8 @@ const PROJECTS: Project[] = [
 ];
 
 const ProjectsPage = () => {
+  usePageTitle("Projects | Dalton Dayton");
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-24">
       <div className="mb-16 flex flex-col gap-4">

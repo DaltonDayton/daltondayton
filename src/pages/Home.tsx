@@ -1,6 +1,9 @@
 import ThemeButton from "../components/ThemeButton";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Home = () => {
+  usePageTitle("Dalton Dayton");
+
   return (
     <main className="mx-auto max-w-2xl px-6 py-24">
       <div className="flex flex-col items-center gap-8 text-center">

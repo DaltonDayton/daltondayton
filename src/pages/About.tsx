@@ -17,10 +17,10 @@ const AboutPage = () => {
 
         <div className="flex flex-col gap-6 text-lg leading-relaxed text-secondary">
           <p>
-            I&apos;m a Senior Software Test Engineer making the transition to
-            full-stack software development. My background in quality assurance
-            has given me a deep understanding of what makes software reliable,
-            maintainable, and user-friendly.
+            I&apos;m a Senior Software Test Engineer and QA Lead making the
+            transition to full-stack software development. My background in
+            quality assurance has given me a deep understanding of what makes
+            software reliable, maintainable, and user-friendly.
           </p>
           <p>
             My testing background means I think about edge cases, write
@@ -37,7 +37,8 @@ const AboutPage = () => {
             {[
               "React",
               "TypeScript",
-              "Next.js",
+              "Vite",
+              "Tailwind CSS",
               "C#",
               ".NET",
               "Ruby on Rails",

@@ -52,7 +52,6 @@ const PROJECTS: Project[] = [
       "Ruby",
       // === Frontend Frameworks & Libraries ===
       "React",
-      "Next.js",
       "Vue.js",
       "Angular",
       "Tailwind CSS",

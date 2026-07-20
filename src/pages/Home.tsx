@@ -12,7 +12,7 @@ const Home = () => {
             Dalton Dayton
           </h1>
           <p className="flex items-center justify-center gap-2 text-xl text-secondary">
-            Software Test Engineer
+            Senior Software Test Engineer
             <svg
               viewBox="0 0 32 24"
               className="h-5 w-7"

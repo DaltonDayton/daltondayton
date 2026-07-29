@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import type { Project } from "../types";
 
 const ProjectCard = ({ project }: { project: Project }) => {

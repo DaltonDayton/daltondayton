@@ -22,6 +22,8 @@ export const PROJECTS: Project[] = [
   {
     slug: "react-portfolio",
     aiUsage: 1,
+    aiNote:
+      "Design, architecture, and most code mine; AI wrote a few components under my direction.",
     name: "React Portfolio",
     summary: "The portfolio you're currently viewing.",
     description: [

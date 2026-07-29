@@ -58,7 +58,7 @@ const ProjectDetailPage = () => {
           </h1>
           <p className="text-sm text-secondary">{project.role}</p>
           {project.aiUsage !== undefined && (
-            <AiUsageMeter level={project.aiUsage} />
+            <AiUsageMeter level={project.aiUsage} note={project.aiNote} />
           )}
         </div>
 
